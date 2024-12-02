@@ -1,0 +1,339 @@
+
+
+/* NEW */
+
+* {
+
+    margin: 0; /* Reset default margins */
+    padding: 0; /* Reset default padding */
+  /*  height: 100%;
+   /* box-sizing: border-box; /* Easier sizing for elements */
+   
+}
+
+.main {
+
+    width: 100%; /* Full width for main section */
+    background: linear-gradient(rgba(130, 141, 171, 1), rgba(130, 141, 171, 0)); /* Gradient background */
+  /*  background-position: center; /* Center background image */
+    background-size: cover; /* Cover the entire area */
+    min-height: 100vh; /* Ensure it covers at least the full viewport height */
+    
+    
+}
+
+.navbar {
+
+    /* width: 1200px; /* Fixed width for navbar */ 
+    width: 100%;
+    height: 75px; /* Fixed height for navbar */
+    margin: auto; /* Center navbar */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between logo and nav links */
+    background-color: #707b9c;
+    
+}
+
+.icon {
+
+    width: 200px; /* Fixed width for icon */
+    height: 70px; /* Fixed height for icon */
+    
+}
+
+.logo {
+
+    color: #573a55; /* Logo text color */
+    font-size: 30px; /* Logo text size */
+    margin-top: 7px;
+    margin-left: 110px;
+    font-family: "Apple Chancery", cursive; /* Logo font */
+    padding-left: 10px; /* Left padding */
+    
+}
+
+.nav-links {
+
+    display: flex; /* Use flexbox for links */
+    justify-content: space-around; /* Space links evenly */
+    list-style: none; /* Remove bullet points */
+    align-items: center; /* Center links vertically */
+    font-size: 19px;
+    margin-top: 1px;
+    margin-right: 110px;
+    padding-bottom: 8px;
+    
+}
+
+.nav-links a {
+
+    color: #573a55; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 0 15px; /* Horizontal padding for links */
+    transition: color 0.3s, background-color 0.3s; /* Smooth transition for hover effects */
+    
+}
+
+.nav-links a:hover {
+
+    color: #deafdb; /* Text color on hover */
+    
+}
+
+.content {
+
+    width: 1200px; /* Fixed width for content */
+    height: auto; /* Height adjusts to content */
+    margin: 40px auto; /* Center content with top/bottom margin */
+    color: #2b1c24; /* Content text color */
+    text-align: center; /* Center text in content */
+    display: flex; /* Enable flexbox for layout */
+    align-items: center;
+    justify-content: space-between; /* Space out items */
+    
+}
+
+.text-content {
+
+    text-align: left; /* Ensure text is aligned left */
+    
+}
+
+.content h3 {
+
+	font-size: 25px; /* Size for main heading */
+    margin: 20px 0; /* Vertical margin for spacing */
+    padding-top: 50px;
+    letter-spacing: 2px; /* Space between letters */
+    text-align: left; /* Align text to the left */
+    color: #472740;
+    
+}
+
+.content h1 {
+
+	line-height: 1; /* Adjust line height for spacing between lines */
+    font-size: 50px; /* Size for main heading */
+    margin: 20px 0; /* Vertical margin for spacing */
+    letter-spacing: 2px; /* Space between letters */
+    text-align: left; /* Align text to the left */
+    color: #472740;
+}
+
+.content .par {
+
+    padding: 10px 2px 25px; /* Combined padding: top, left/right, bottom */
+    letter-spacing: 1.2px; /* Space between letters in paragraph */
+    line-height: 1.5; /* Adjust line height for spacing between lines */
+    font-size: 16px;
+    text-align: left; /* Align text to the left */
+    color: #472740;
+    
+}
+
+.content .profile-image {
+
+	border-radius: 50%;
+	margin-left: 20px; /* Space between the image and text */
+	margin-top: 50px;
+
+}
+
+/* Container styling for the About section */
+.About {
+
+    width: 1300px; /* Set max width for the About section */
+    height: auto; /* Allow height to adjust to the content */
+    margin: 40px auto; /* Center the content horizontally and add vertical margin */
+    text-align: center; /* Center-align text within the About section */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically align items within the container */
+    justify-content: space-between; /* Space items evenly across the container */
+    
+}
+
+/* Styling for the left section inside About */
+.About #left {
+
+    width: 50%; /* Take up 50% of the About container's width */
+    text-align: center; /* Center-align content in the left section */
+    
+}
+
+/* Styling for the right section inside About */
+.About #right {
+
+    width: 50%; /* Take up the other 50% of the About container's width */
+    text-align: center; /* Center-align content in the right section */
+    
+}
+
+/* Styling for images inside the About section */
+.About img {
+
+    width: 50%; /* Set image width to 50% of its container */
+    height: auto; /* Keep image aspect ratio */
+    object-fit: cover; /* Crop image to fit its container if necessary */
+    border-radius: 10px; /* Add rounded corners to the image */
+    transition: transform 0.5s ease-in-out; /* Smoothly scale image on hover */
+    margin-top: 20px; /* Add top margin to position image slightly lower */
+    
+}
+
+/* Image hover effect for slight scaling */
+.About img:hover {
+
+    transform: scale(1.05); /* Scale image slightly when hovered */
+    
+}
+
+/* Styling for main heading (h1) inside About */
+.About h1 {
+
+    line-height: 1.5; /* Adjust line height for spacing between lines */
+    font-size: 50px; /* Set font size for main heading */
+    margin: 20px 0; /* Add vertical margin around heading */
+    letter-spacing: 2px; /* Space out letters in heading */
+    text-align: center; /* Center-align the heading text */
+    color: #4d2a44; /* Set the color of heading text */
+    
+}
+
+/* Styling for paragraph text in About */
+.About .para {
+
+    padding: 10px 2px 25px; /* Add padding: top, sides, and bottom */
+    letter-spacing: 1.2px; /* Add letter spacing for better readability */
+    line-height: 1.8; /* Adjust line height for better spacing */
+    font-size: 18px; /* Set font size for paragraph text */
+    text-align: center; /* Center-align paragraph text */
+    max-width: 800px; /* Set maximum width for readability */
+    color: #4d2a44; /* Set paragraph text color */
+    
+}
+
+/* Styling for the Resume section within About */
+.About .Resume {
+
+    padding: 10px 2px 25px; /* Padding: top, sides, and bottom */
+    letter-spacing: 1.2px; /* Add spacing between letters */
+    line-height: 1.8; /* Set line height for spacing between lines */
+    font-size: 18px; /* Font size for the Resume text */
+    text-align: center; /* Center-align Resume text */
+    max-width: 800px; /* Optional: limit width for better readability */
+    color: #70364e; /* Set color for Resume text */
+    
+}
+
+
+.Projects {
+
+	width: 1200px; /* Fixed width for content */
+    height: auto; /* Height adjusts to content */
+    margin: 40px auto; /* Center content with top/bottom margin */
+    text-align: center; /* Center text in content */
+    display: flex; /* Enable flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+
+}
+
+.Projects h1 {
+
+    line-height: 1.5; /* Adjust line height for spacing between lines */
+    font-size: 50px; /* Size for main heading */
+    margin: 20px 0; /* Vertical margin for spacing */
+    letter-spacing: 2px; /* Space between letters */
+    text-align: left; /* Align text to the left */
+    color: #6e374d; /* Content text color */
+    
+}
+
+/* .Projects .container {
+
+    margin: 100px 0 0 200px; /* Top margin of 100px, no right margin, 0 bottom margin, and 200px left margin */
+    /*   width: 70%; /* Set the width of the container to 70% of its parent */
+    /*   height: 450px; /* Fixed height of 450px for the container */
+    /*   display: flex; /* Use flexbox layout for alignment */
+    /*   justify-content: center; /* Center the items horizontally */
+    /*   gap: 10px; /* Space of 10px between child elements */
+    /*   text-align: center;
+    
+}
+
+.Projects .container img {
+
+    /*   width: 100%; /* Set image width to 1000% of the container */
+    /*   height: 100%; /* Set image height to 100% of the container */
+    /*   object-fit: cover; /* Ensure the image covers the area while maintaining its aspect ratio */
+    /*   border-radius: 10px; /* Round the corners of the image with a radius of 10px */
+    /*   transition: transform 0.5s ease-in-out; /* Smooth transition for transformation effects *
+    
+    
+}
+
+.Projects .container img:hover {
+    transform: scale(1.05); /* Slightly scale up the image on hover *
+}
+
+*/
+
+.Projects .container h3 {
+
+	line-height: 1.5; /* Adjust line height for spacing between lines */
+    font-size: 30px; /* Size for main heading */
+    margin: 20px ; /* Vertical margin for spacing */
+    letter-spacing: 2px; /* Space between letters */
+    text-align: left; /* Align text to the left */
+    color: #6e374d; /* Content text color */
+
+}
+
+.Contact {
+
+	width: 1200px; /* Fixed width for content */
+    height: auto; /* Height adjusts to content */
+    margin: 40px auto; /* Center content with top/bottom margin */
+    color: #2b1c24; /* Content text color */
+    text-align: center; /* Center text in content */
+    display: flex; /* Enable flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    color: #733850;
+
+}
+
+.Contact h1 {
+
+	line-height: 1.5; /* Adjust line height for spacing between lines */
+    font-size: 50px; /* Size for main heading */
+    margin: 20px 0; /* Vertical margin for spacing */
+    letter-spacing: 2px; /* Space between letters */
+    text-align: left; /* Align text to the left */
+
+}
+
+.Contact para {
+
+	padding: 10px 2px 10px; /* Combined padding: top, left/right, bottom */
+    letter-spacing: 1.2px; /* Space between letters in paragraph */
+    line-height: 1.8; /* Adjust line height for spacing between lines */
+    font-size: 18px; /* Font size for paragraph */
+    text-align: center; /* Align text to the left */
+    max-width: 800px; /* Optional: limit width for better readability */
+    color: #4d2a44; /* Content text color */
+    
+}
+
+.Contact a {
+
+	padding: 10px 2px 25px; /* Combined padding: top, left/right, bottom */
+    letter-spacing: 1.2px; /* Space between letters in paragraph */
+    line-height: 1.2; /* Adjust line height for spacing between lines */
+    font-size: 13px; /* Font size for paragraph */
+    text-align: center; /* Align text to the left */
+    max-width: 800px; /* Optional: limit width for better readability */
+    display: inline-block; /* Ensures icons are inline */
+
+}
